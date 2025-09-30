@@ -14,9 +14,9 @@ export default function WorkPage() {
             <nav>
               <ul className="flex space-x-8 text-sm">
                 <li><Link href="/" className="hover:text-gray-300 transition-colors">Home</Link></li>
-                <li><a href="/#about" className="hover:text-gray-300 transition-colors">About</a></li>
+                <li><a href="#about" className="hover:text-gray-300 transition-colors">About</a></li>
                 <li><Link href="/work" className="text-gray-300 font-medium">Work</Link></li>
-                <li><a href="/#contact" className="hover:text-gray-300 transition-colors">Contact</a></li>
+                <li><a href="#contact" className="hover:text-gray-300 transition-colors">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -267,7 +267,7 @@ export default function WorkPage() {
               I&rsquo;m always looking for exceptional entrepreneurs building the future.
             </p>
             <Link
-              href="/#contact"
+              href="#contact"
               className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
             >
               Get in Touch

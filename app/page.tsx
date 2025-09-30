@@ -12,9 +12,9 @@ export default function Home() {
             <nav>
               <ul className="flex space-x-8 text-sm">
                 <li><Link href="/" className="hover:text-gray-300 transition-colors">Home</Link></li>
-                <li><a href="/#about" className="hover:text-gray-300 transition-colors">About</a></li>
+                <li><a href="#about" className="hover:text-gray-300 transition-colors">About</a></li>
                 <li><Link href="/work" className="hover:text-gray-300 transition-colors">Work</Link></li>
-                <li><a href="/#contact" className="hover:text-gray-300 transition-colors">Contact</a></li>
+                <li><a href="#contact" className="hover:text-gray-300 transition-colors">Contact</a></li>
               </ul>
             </nav>
           </div>
