@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function WorkPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -6,13 +9,13 @@ export default function WorkPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center justify-between">
             <h1 className="text-3xl font-bold tracking-tight">
-              <a href="/" className="hover:text-gray-300 transition-colors">CHARLIE SCOTT</a>
+              <Link href="/" className="hover:text-gray-300 transition-colors">CHARLIE SCOTT</Link>
             </h1>
             <nav>
               <ul className="flex space-x-8 text-sm">
-                <li><a href="/" className="hover:text-gray-300 transition-colors">Home</a></li>
+                <li><Link href="/" className="hover:text-gray-300 transition-colors">Home</Link></li>
                 <li><a href="/#about" className="hover:text-gray-300 transition-colors">About</a></li>
-                <li><a href="/work" className="text-gray-300 font-medium">Work</a></li>
+                <li><Link href="/work" className="text-gray-300 font-medium">Work</Link></li>
                 <li><a href="/#contact" className="hover:text-gray-300 transition-colors">Contact</a></li>
               </ul>
             </nav>
@@ -53,9 +56,11 @@ export default function WorkPage() {
                   </div>
                 </div>
                 <div className="lg:w-48 flex-shrink-0">
-                  <img
+                  <Image
                     src="https://images.unsplash.com/photo-1560472355-109703aa3edc?w=300&h=200&fit=crop"
                     alt="TechVenture Capital Office"
+                    width={300}
+                    height={200}
                     className="w-full h-32 object-cover rounded-lg"
                   />
                 </div>
@@ -77,7 +82,7 @@ export default function WorkPage() {
                     </div>
                     <h5 className="text-lg text-blue-600 font-medium mb-2">Microsoft Azure</h5>
                     <p className="text-gray-700 mb-3">
-                      Led product strategy for Azure's enterprise data services, managing a team of 12 engineers and designers.
+                      Led product strategy for Azure&rsquo;s enterprise data services, managing a team of 12 engineers and designers.
                       Launched 3 major features that generated $50M+ in revenue.
                     </p>
                     <div className="flex flex-wrap gap-2">
@@ -259,14 +264,14 @@ export default function WorkPage() {
           <div className="mb-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
             <h3 className="text-lg font-semibold mb-2">Interested in Working Together?</h3>
             <p className="text-sm text-gray-600 mb-4">
-              I'm always looking for exceptional entrepreneurs building the future.
+              I&rsquo;m always looking for exceptional entrepreneurs building the future.
             </p>
-            <a
+            <Link
               href="/#contact"
               className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
             >
               Get in Touch
-            </a>
+            </Link>
           </div>
 
           {/* Recent Recognition */}

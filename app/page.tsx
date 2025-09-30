@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -8,9 +11,9 @@ export default function Home() {
             <h1 className="text-3xl font-bold tracking-tight">CHARLIE SCOTT</h1>
             <nav>
               <ul className="flex space-x-8 text-sm">
-                <li><a href="/" className="hover:text-gray-300 transition-colors">Home</a></li>
+                <li><Link href="/" className="hover:text-gray-300 transition-colors">Home</Link></li>
                 <li><a href="/#about" className="hover:text-gray-300 transition-colors">About</a></li>
-                <li><a href="/work" className="hover:text-gray-300 transition-colors">Work</a></li>
+                <li><Link href="/work" className="hover:text-gray-300 transition-colors">Work</Link></li>
                 <li><a href="/#contact" className="hover:text-gray-300 transition-colors">Contact</a></li>
               </ul>
             </nav>
@@ -25,14 +28,16 @@ export default function Home() {
             <div className="mb-6">
               <h2 className="text-4xl font-bold mb-6">About Charlie</h2>
               <div className="mb-8">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&crop=face"
                   alt="Charlie Scott"
+                  width={320}
+                  height={480}
                   className="w-80 h-auto mb-6"
                 />
               </div>
               <blockquote className="bg-gray-50 border-l-4 border-gray-300 pl-6 py-4 mb-8 italic text-lg">
-                <p>Every morning from 5 to 8 AM is my "reading and writing time". After reading extensively about global tech developments and commentary, I try to organize my insights into articles to share with everyone, hoping to inspire readers, especially those who, like me, are working hard to drive change as entrepreneurs.</p>
+                <p>Every morning from 5 to 8 AM is my &ldquo;reading and writing time&rdquo;. After reading extensively about global tech developments and commentary, I try to organize my insights into articles to share with everyone, hoping to inspire readers, especially those who, like me, are working hard to drive change as entrepreneurs.</p>
               </blockquote>
             </div>
 
@@ -47,7 +52,7 @@ export default function Home() {
               </p>
 
               <p className="mb-4">
-                Charlie's entrepreneurial journey began in 2010 when he co-founded CloudSync, a B2B data synchronization platform that was later acquired by Microsoft. Following the acquisition, he spent three years at Microsoft Azure before transitioning to venture capital.
+                Charlie&rsquo;s entrepreneurial journey began in 2010 when he co-founded CloudSync, a B2B data synchronization platform that was later acquired by Microsoft. Following the acquisition, he spent three years at Microsoft Azure before transitioning to venture capital.
               </p>
 
               <p className="mb-4">
@@ -60,7 +65,7 @@ export default function Home() {
 
               <h3 className="text-2xl font-semibold mb-4">Ask Charlie</h3>
               <p className="mb-6">
-                Want to hear Charlie's perspective or insights? Feel free to <a href="#contact" className="text-blue-600 hover:underline">reach out</a>.
+                Want to hear Charlie&rsquo;s perspective or insights? Feel free to <a href="#contact" className="text-blue-600 hover:underline">reach out</a>.
               </p>
 
               <h3 className="text-2xl font-semibold mb-4">Social</h3>
@@ -119,7 +124,7 @@ export default function Home() {
           <div className="mb-8">
             <h3 className="text-lg font-semibold mb-4 text-gray-800">About</h3>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Entrepreneurs learn from practice, whether the outcome is success or failure. I'm building a better venture capital firm and writing about my daily learnings to inspire all entrepreneurs, regardless of their outcomes. I'm Charlie Scott, and I'm creating TechVenture Capital.
+              Entrepreneurs learn from practice, whether the outcome is success or failure. I&rsquo;m building a better venture capital firm and writing about my daily learnings to inspire all entrepreneurs, regardless of their outcomes. I&rsquo;m Charlie Scott, and I&rsquo;m creating TechVenture Capital.
             </p>
           </div>
 
