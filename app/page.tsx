@@ -29,7 +29,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold mb-6">About Charlie</h2>
               <div className="mb-8">
                 <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&crop=face"
+                  src="/charlie-photo.jpg"
                   alt="Charlie Scott"
                   width={320}
                   height={480}
